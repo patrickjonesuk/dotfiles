@@ -105,3 +105,4 @@ zipp==3.7.0
 zope.interface==5.4.0
 cmd2==2.3.3
 pyperclip==1.8.2
+urwid==2.1.2

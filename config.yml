@@ -24,6 +24,9 @@ units:
     requires-package:
       - cava
 
+  tty-clock:
+    install-command: 'cd ~ && git clone https://github.com/xorg62/tty-clock.git && make -C tty-clock install PREFIX="~/.local" && rm -rf tty-clock'
+
 # shells
 
   zsh:
@@ -131,6 +134,7 @@ groups:
     units:
       - bpytop
       - cava
+      - tty-clock
   kde-plasma-apps:
     units:
       - konsole
