@@ -1,0 +1,205 @@
+
+units:
+
+# programming languages
+
+  python3:
+    files:
+      - .pip-freeze
+    requires-package:
+      - bpython
+    load-scripts-post: load_pip.sh
+    save-scripts-pre: save_pip.sh
+
+  node-nvm:
+    install-command: 'curl -o- \"https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh\" | bash ; nvm install node'
+
+# system utils
+
+  bpytop:
+    requires-package:
+      - bpytop
+
+  cava:
+    requires-package:
+      - cava
+
+# shells
+
+  zsh:
+    files:
+      - .zshrc
+    requires-package:
+      - zsh
+  oh-my-zsh:
+    files:
+      - .oh-my-zsh/
+
+  bash:
+    files:
+      - .bash_profile
+      - .bashrc
+
+# vim/neovim
+  vim:
+    files:
+      - .vimrc
+
+  neovim:
+    files:
+      - .config/nvim
+      - .local/share/nvim/site
+      - .local/share/nvim/*.vim
+    requires-package:
+      - neovim
+
+  nvim-plug:
+    files:
+      .local/share/nvim/site/autoload/plug.vim
+
+# kde apps
+
+  konsole:
+    files:
+      - .local/share/konsole
+      - .local/share/kxmlgui5/konsole
+
+  dolphin:
+    files:
+      - .local/share/dolphin
+      - .local/share/kxmlgui5/dolphin
+
+  kmail:
+    files:
+      - .local/share/kmail
+      - .local/share/kxmlgui5/kmail
+
+  kde-kxmlgui5:
+    files:
+      - .local/share/kxmlgui5/
+
+
+# general kde config
+
+  kde-plasma-fonts:
+    files:
+      - .config/kcmfonts
+      - .config/kdeglobals
+      - .config/kfontinstuirc
+
+  krunner:
+    files:
+      - .config/krunnerrc
+
+  kwin:
+    files:
+      - .config/kwinrc
+      - .config/kwinrules
+      - .local/share/kwin
+
+  kde-plasma-core:
+    files:
+      - .local/share/plasma
+      - .local/share/color-schemes
+      - .local/share/icons
+      - .local/share/wallpapers
+
+      - .config/autostart
+      - .config/autostart-scripts
+      - .config/breezerc
+      - .config/gtk*
+      - .config/ksplashrc
+      - .config/kdeglobals
+      - .config/Trolltech.conf
+      - .config/kcminputrc
+      - .config/plasmarc
+      - .config/kglobalshortcutsrc
+      - .config/khotkeysrc
+      - .config/kded5rc
+      - .config/kscmserverrc
+      - .config/plasmanotifyrc
+      - .config/plasma-localerc
+      - .config/ktimezonedrc
+
+
+groups:
+  programming-languages:
+    units:
+      - python3
+      - node-nvm
+  system-utils:
+    units:
+      - bpytop
+      - cava
+  kde-plasma-apps:
+    units:
+      - konsole
+      - kmail
+      - dolphin
+      - kde-kxmlgui5
+  kde-plasma-full:
+    units:
+      - kde-plasma-core
+      - krunner
+      - kde-plasma-fonts
+      - kwin
+    groups:
+      - kde-plasma-apps
+  oh-my-zsh:
+    units:
+      - zsh
+      - oh-my-zsh
+
+  neovim:
+    units:
+      - vim
+      - neovim
+
+  neovim-plugins:
+    units:
+      - nvim-plug
+    groups:
+      - neovim
+
+package-managers:
+  pacman:
+    install: "pacman -S"
+    remove: "pacman -R"
+  yay:
+    install: "yay -S"
+    remove: "yay -R"
+  apt:
+    install: "apt install"
+    remove: "apt remove"
+
+packages:
+  neovim:
+    pacman: neovim
+    apt: neovim
+  bpython:
+    pacman: bpython
+    apt: bpython
+  bpytop:
+    pacman: bpytop
+    apt: bpytop
+  cava:
+    apt: cava
+    yay: cava
+
+
+environments:
+  desktop:
+    default-package-manager: pacman
+    groups:
+      - kde-plasma-full
+      - oh-my-zsh
+      - neovim-plugins
+      - programming-languages
+      - system-utils
+  wsl:
+    default-package-manager: apt
+    groups:
+      - oh-my-zsh
+      - neovim-plugins
+      - programming-languages
+      - system-utils
