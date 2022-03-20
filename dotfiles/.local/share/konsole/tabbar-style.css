@@ -1,0 +1,27 @@
+QTabBar,
+QTabBar::tab
+{
+    font-family: "Noto Sans";
+    font-size: 11px;
+    height: 16px;
+    min-width: 75px;
+    padding: 2px;
+    border: 0px;
+    border-bottom: 3px solid palette(dark);
+    background-color: #282A36;
+    color: palette(text);
+}
+
+QTabBar::tab:hover
+{
+    text-decoration: underline;
+}
+
+QTabBar::tab:selected
+{
+    font-weight: bold;
+    background-color: #383A46;
+    border: 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}

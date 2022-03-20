@@ -15,12 +15,16 @@ Plug 'https://github.com/jiangmiao/auto-pairs' " auto-close
 Plug 'https://github.com/tpope/vim-fugitive' " Git plugin
 Plug 'https://github.com/EvanQuan/vim-executioner' " Run file
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
+Plug 'dracula/vim', {'as': 'dracula'}
 
 set encoding=UTF-8
 
 call plug#end()
 
 " Plugin cfg
+
+colorscheme dracula
+set termguicolors
 
 inoremap <silent><expr> <c-space> coc#refresh()
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
