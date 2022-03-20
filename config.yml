@@ -124,6 +124,14 @@ units:
       - .config/plasma-localerc
       - .config/ktimezonedrc
 
+# Polybar
+  polybar:
+    files:
+      - .config/polybar
+    requires-package:
+      - polybar
+      - dbus-python
+
 
 groups:
   programming-languages:
@@ -147,6 +155,7 @@ groups:
       - krunner
       - kde-plasma-fonts
       - kwin
+      - polybar
     groups:
       - kde-plasma-apps
   oh-my-zsh:
@@ -189,6 +198,12 @@ packages:
   cava:
     apt: cava
     yay: cava
+  polybar:
+    apt: polybar
+    yay: polybar
+  dbus-python:
+    pacman: dbus-python
+    apt: python-dbus
 
 
 environments:

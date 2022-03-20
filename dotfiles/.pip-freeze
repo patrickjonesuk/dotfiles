@@ -106,3 +106,14 @@ zope.interface==5.4.0
 cmd2==2.3.3
 pyperclip==1.8.2
 urwid==2.1.2
+btrfsutil==5.16.2
+click==8.0.4
+cupshelpers==1.0
+distro==1.7.0
+louis==3.21.0
+pycairo==1.21.0
+pycups==2.0.1
+pycurl==7.45.0
+PyGObject==3.42.0
+pyparsing==3.0.2
+requests==2.27.1

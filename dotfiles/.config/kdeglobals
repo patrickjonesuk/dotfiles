@@ -140,8 +140,7 @@ DirSelectDialog Size=844,598
 
 [General]
 BrowserApplication=firefox-developer-edition.desktop
-ColorScheme=BreezeDarkCustom
-ColorSchemeHash=9e44bdf29c77b9358dea14da6aaee562b537970c
+ColorSchemeHash=180771dfacb1551af60be7d3a4dfcb9f5285f035
 Name[en_GB]=Breeze Light
 Name=Breeze Light
 shadeSortColumn=true
@@ -156,7 +155,7 @@ contrast=4
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
