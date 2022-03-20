@@ -14,12 +14,13 @@ Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple c
 Plug 'https://github.com/jiangmiao/auto-pairs' " auto-close
 Plug 'https://github.com/tpope/vim-fugitive' " Git plugin
 Plug 'https://github.com/EvanQuan/vim-executioner' " Run file
-Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 Plug 'dracula/vim', {'as': 'dracula'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 set encoding=UTF-8
 
 call plug#end()
+lua require 'treesitter'
 
 " Plugin cfg
 
