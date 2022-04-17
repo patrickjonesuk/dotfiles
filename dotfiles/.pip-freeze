@@ -117,3 +117,14 @@ pycurl==7.45.0
 PyGObject==3.42.0
 pyparsing==3.0.2
 requests==2.27.1
+click==8.1.2
+cryptography==36.0.2
+MarkupSafe==2.1.1
+pycurl==7.45.1
+PyGObject==3.42.1
+pyOpenSSL==22.0.0
+pyparsing==3.0.8
+PyQt5-sip==12.10.1
+tomli==2.0.1
+urllib3==1.26.9
+zipp==3.8.0
