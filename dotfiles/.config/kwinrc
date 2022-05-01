@@ -1,5 +1,5 @@
 [$Version]
-update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default
+update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage,kwin.upd:make-translucency-effect-disabled-by-default,kwin.upd:remove-flip-switch-effect,kwin.upd:remove-cover-switch-effect,kwin.upd:remove-cubeslide-effect,kwin.upd:remove-xrender-backend,kwin.upd:enable-scale-effect-by-default,bismuth_new_logger.upd:bismuth-new-logger
 
 [Compositing]
 OpenGLIsUnsafe=false
@@ -7,7 +7,8 @@ OpenGLIsUnsafe=false
 [Desktops]
 Id_1=3bbd0af9-2e70-4ee9-8395-2ec4a0d6ca28
 Id_2=fd057433-20e4-4bce-92e6-647de104e5b3
-Number=2
+Id_3=867f6fa1-a3a6-457f-b270-4549d582b1a9
+Number=3
 Rows=1
 
 [Effect-Blur]
@@ -17,21 +18,38 @@ NoiseStrength=3
 [Effect-PresentWindows]
 BorderActivateAll=9
 
+[Effect-Slide]
+SlideBackground=false
+
 [MouseBindings]
 CommandAll2=Minimize
 CommandAllWheel=Change Opacity
 
 [Plugins]
 blurEnabled=true
+desktopchangeosdEnabled=true
 forceblurEnabled=true
+kwin4_effect_fadedesktopEnabled=true
 kwin4_effect_translucencyEnabled=true
 minimizeallEnabled=false
 overviewEnabled=true
+slideEnabled=false
 snaphelperEnabled=true
 synchronizeskipswitcherEnabled=false
 tilegapsEnabled=true
 videowallEnabled=false
 wobblywindowsEnabled=true
+
+[Script-bismuth]
+enableFloatingLayout=true
+enableQuarterLayout=true
+screenGapBottom=5
+screenGapLeft=5
+screenGapRight=5
+screenGapTop=5
+
+[Script-desktopchangeosd]
+TextOnly=true
 
 [Script-forceblur]
 patterns=yakuake\nurxvt\nkeepassxc\ndiscord\ndolphin\nedex-ui\n
@@ -69,8 +87,12 @@ marginTop=10
 [TabBox]
 BorderActivate=9
 
+[Windows]
+ActiveMouseScreen=false
+SeparateScreenFocus=true
+
 [org.kde.kdecoration2]
 BorderSize=Tiny
 BorderSizeAuto=false
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__ActiveAccentFrame
+library=org.kde.bismuth.decoration
+theme=Bismuth

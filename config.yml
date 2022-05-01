@@ -101,6 +101,7 @@ units:
       - .local/share/kwin
 
   kde-plasma-core:
+    preserve-symlinks: true
     files:
       - .local/share/plasma
       - .local/share/color-schemes

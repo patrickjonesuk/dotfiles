@@ -1,3 +1,6 @@
+[$Version]
+update_info=bismuth_shortcuts_category.upd:bismuth-shortcuts-category,bismuth_shortcuts_from_kwin.upd:bismuth-shortcuts-from-kwin
+
 [ActivityManager]
 _k_friendly_name=Activity Manager
 switch-to-activity-aefaf9a8-587c-4fe6-9cb9-a1e6af7f5e58=none,none,Switch to activity "Default"
@@ -7,6 +10,44 @@ Switch keyboard layout to English (UK)=none,none,Switch keyboard layout to Engli
 Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
 Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
+
+[bismuth]
+_k_friendly_name=Window Tiling
+decrease_master_size=none,none,Decrease Master Area Size
+decrease_master_win_count=none,Meta+[,Decrease Master Area Window Count
+decrease_window_height=none,Meta+Ctrl+K,Decrease Window Height
+decrease_window_width=none,Meta+Ctrl+H,Decrease Window Width
+focus_bottom_window=Meta+J,Meta+J,Focus Bottom Window
+focus_left_window=Meta+H,Meta+H,Focus Left Window
+focus_next_window=none,none,Focus Next Window
+focus_prev_window=none,none,Focus Previous Window
+focus_right_window=Meta+L,Meta+L,Focus Right Window
+focus_upper_window=Meta+K,Meta+K,Focus Upper Window
+increase_master_size=none,none,Increase Master Area Size
+increase_master_win_count=none,Meta+],Increase Master Area Window Count
+increase_window_height=none,Meta+Ctrl+J,Increase Window Height
+increase_window_width=none,Meta+Ctrl+L,Increase Window Width
+move_window_to_bottom_pos=Meta+Shift+J,Meta+Shift+J,Move Window Down
+move_window_to_left_pos=Meta+Shift+H,Meta+Shift+H,Move Window Left
+move_window_to_next_pos=none,none,Move Window to the Next Position
+move_window_to_prev_pos=none,none,Move Window to the Previous Position
+move_window_to_right_pos=Meta+Shift+L,Meta+Shift+L,Move Window Right
+move_window_to_upper_pos=Meta+Shift+K,Meta+Shift+K,Move Window Up
+next_layout=none,Meta+\\\\,Switch to the Next Layout
+prev_layout=none,Meta+|,Switch to the Previous Layout
+push_window_to_master=none,Meta+Return,Push Active Window to Master Area
+rotate=Meta+R,Meta+R,Rotate
+rotate_part=none,Meta+Shift+R,Rotate Part
+rotate_reverse=none,none,Rotate (Reverse)
+toggle_float_layout=Meta+Shift+F,Meta+Shift+F,Toggle Floating Layout
+toggle_monocle_layout=none,Meta+M,Toggle Monocle Layout
+toggle_quarter_layout=none,none,Toggle Quarter Layout
+toggle_spiral_layout=none,none,Toggle Spiral Layout
+toggle_spread_layout=none,none,Toggle Spread Layout
+toggle_stair_layout=none,none,Toggle Stair Layout
+toggle_three_column_layout=none,none,Toggle Three Column Layout
+toggle_tile_layout=none,Meta+T,Toggle Tile Layout
+toggle_window_floating=Meta+F,Meta+F,Toggle Active Window Floating
 
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
@@ -25,7 +66,6 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
-{a71520ac-88fb-42da-b48f-56e9d4f73673}=Ctrl+Alt+T,none,Launch Konsole
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
 
 [kmix]
@@ -37,9 +77,16 @@ increase_volume=Volume Up,Volume Up,Increase Volume
 mic_mute=Microphone Mute\tMeta+Volume Mute,Microphone Mute\tMeta+Volume Mute,Mute Microphone
 mute=Volume Mute,Volume Mute,Mute
 
+[knotes]
+_k_friendly_name=KNotes
+hide_all_notes=Alt+Shift+H,Alt+Shift+H,Hide All Notes
+new_note=Alt+Shift+N,Alt+Shift+N,New Note
+new_note_clipboard=Alt+Shift+C,Alt+Shift+C,New Note From Clipboard
+show_all_notes=Alt+Shift+S,Alt+Shift+S,Show All Notes
+
 [ksmserver]
 Halt Without Confirmation=none,,Halt Without Confirmation
-Lock Session=Meta+L\tCtrl+Alt+L,Meta+L\tCtrl+Alt+L\tScreensaver,Lock Session
+Lock Session=Ctrl+Alt+L,Meta+L\tCtrl+Alt+L\tScreensaver,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out
 Log Out Without Confirmation=none,,Log Out Without Confirmation
 Reboot Without Confirmation=none,,Reboot Without Confirmation
@@ -96,10 +143,10 @@ Switch to Desktop 7=Meta+7,,Switch to Desktop 7
 Switch to Desktop 8=Meta+8,,Switch to Desktop 8
 Switch to Desktop 9=Meta+9,,Switch to Desktop 9
 Switch to Next Desktop=none,,Switch to Next Desktop
-Switch to Next Screen=none,,Switch to Next Screen
+Switch to Next Screen=Meta+E,,Switch to Next Screen
 Switch to Previous Desktop=none,,Switch to Previous Desktop
-Switch to Previous Screen=none,,Switch to Previous Screen
-Switch to Screen 0=none,,Switch to Screen 0
+Switch to Previous Screen=Meta+Q,,Switch to Previous Screen
+Switch to Screen 0=Meta+Num+0,,Switch to Screen 0
 Switch to Screen 1=none,,Switch to Screen 1
 Switch to Screen 2=none,,Switch to Screen 2
 Switch to Screen 3=none,,Switch to Screen 3
@@ -179,9 +226,9 @@ Window to Desktop 7=Meta+Ctrl+7,,Window to Desktop 7
 Window to Desktop 8=Meta+Ctrl+8,,Window to Desktop 8
 Window to Desktop 9=Meta+Ctrl+9,,Window to Desktop 9
 Window to Next Desktop=none,,Window to Next Desktop
-Window to Next Screen=none,Meta+Shift+Right,Window to Next Screen
+Window to Next Screen=Meta+Shift+E,Meta+Shift+Right,Window to Next Screen
 Window to Previous Desktop=none,,Window to Previous Desktop
-Window to Previous Screen=none,Meta+Shift+Left,Window to Previous Screen
+Window to Previous Screen=Meta+Shift+Q,Meta+Shift+Left,Window to Previous Screen
 Window to Screen 0=none,,Window to Screen 0
 Window to Screen 1=none,,Window to Screen 1
 Window to Screen 2=none,,Window to Screen 2
@@ -215,7 +262,13 @@ _launch=none,none,Flameshot
 
 [org.kde.dolphin.desktop]
 _k_friendly_name=Dolphin
-_launch=Meta+E,Meta+E,Dolphin
+_launch=none,Meta+E,Dolphin
+
+[org.kde.konsole.desktop]
+NewTab=none,none,Open a New Tab
+NewWindow=none,none,Open a New Window
+_k_friendly_name=Konsole
+_launch=Ctrl+Alt+T,none,Konsole
 
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
@@ -230,10 +283,11 @@ _launch=none,Meta+.,Emoji Selector
 ActiveWindowScreenShot=Meta+Print,Meta+Print,Capture Active Window
 CurrentMonitorScreenShot=none,none,Capture Current Monitor
 FullScreenScreenShot=Shift+Print,Shift+Print,Capture Entire Desktop
-OpenWithoutScreenshot=none,none,Launch without taking a screenshot
+OpenWithoutScreenshot=none,none,Launch Spectacle without capturing
 RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Capture Rectangular Region
 WindowUnderCursorScreenShot=Meta+Ctrl+Print,Meta+Ctrl+Print,Capture Window Under Cursor
 _k_friendly_name=Spectacle
+_launch=Print,Print,Launch Spectacle
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -261,13 +315,13 @@ activate task manager entry 7=none,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=none,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=none,Meta+9,Activate Task Manager Entry 9
 activate widget 33=Alt+F1,none,Activate Application Launcher Widget
-activate widget 4=,none,Activate Application Launcher Widget
+activate widget 4=none,none,Activate Application Launcher Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Enable Clipboard Actions
 cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
 edit_clipboard=none,,Edit Contents…
-manage activities=Meta+Q,Meta+Q,Show Activity Switcher
+manage activities=none,Meta+Q,Show Activity Switcher
 next activity=Meta+Tab,Meta+Tab,Walk through activities
 previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Walk through activities (Reverse)
 repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard

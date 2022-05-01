@@ -61,31 +61,31 @@ function! s:show_documentation()
   endif
 endfunction
 
-function! RunFile()
-    exec "w"
-    let l:fname = expand("%")
-    if &filetype == 'c'
-        exec "TerminalSplit gcc % -o " . fname . "<"
-        exec "TerminalSplit time ./" . fname . "<"
-    elseif &filetype == 'cpp'
-        exec "TerminalSplit g++ % -o " . fname . "<"
-        exec "TerminalSplit time ./" . fname . "<"
-    elseif &filetype == 'java'
-        exec "TerminalSplit javac %"
-        exec "TerminalSplit time java " . fname
-    elseif &filetype == 'sh'
-        exec "TerminalSplit time bash " . fname
-    elseif &filetype == 'python'
-        exec "TerminalSplit time python3 " . fname
-    elseif &filetype == 'html'
-        exec "TerminalSplit google-chrome " . fname . " &"
-    elseif &filetype == 'go'
-        exec "TerminalSplit go build %<"
-        exec "TerminalSplit time go run " . fname
-    elseif &filetype == 'matlab'
-        exec "TerminalVSplit time octave " . fname
-    endif
-endfunc
+" function! RunFile()
+"     exec "w"
+"     let l:fname = expand("%")
+"     if &filetype == 'c'
+"         exec "TerminalSplit gcc % -o " . fname . "<"
+"         exec "TerminalSplit time ./" . fname . "<"
+"     elseif &filetype == 'cpp'
+"         exec "TerminalSplit g++ % -o " . fname . "<"
+"         exec "TerminalSplit time ./" . fname . "<"
+"     elseif &filetype == 'java'
+"         exec "TerminalSplit javac %"
+"         exec "TerminalSplit time java " . fname
+"     elseif &filetype == 'sh'
+"         exec "TerminalSplit time bash " . fname
+"     elseif &filetype == 'python'
+"         exec "TerminalSplit time python3 " . fname
+"     elseif &filetype == 'html'
+"         exec "TerminalSplit google-chrome " . fname . " &"
+"     elseif &filetype == 'go'
+"         exec "TerminalSplit go build %<"
+"         exec "TerminalSplit time go run " . fname
+"     elseif &filetype == 'matlab'
+"         exec "TerminalVSplit time octave " . fname
+"     endif
+" endfunc
 
 
 
