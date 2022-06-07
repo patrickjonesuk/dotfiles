@@ -50,9 +50,12 @@ units:
 
   neovim:
     files:
-      - .config/nvim
+      - .config/nvim/*
       - .local/share/nvim/site
       - .local/share/nvim/*.vim
+    exclude-files:
+      - .config/nvim/plugged
+
     requires-package:
       - neovim
 
