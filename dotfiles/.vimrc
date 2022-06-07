@@ -4,6 +4,8 @@ set number
 set ignorecase
 set smartcase
 set hlsearch
+set splitright
+set splitbelow
 
 set expandtab " Make sure that we don't accidently use tabs instead of spaces
 set tabstop=4
@@ -67,30 +69,55 @@ function! HasPaste()
     return ''
 endfunction
 
+" function! RunFile()
+"     exec "w"
+"     if &filetype == 'c'
+"         exec "!gcc % -o %<"
+"         exec "!time ./%<"
+"     elseif &filetype == 'cpp'
+"         exec "!g++ % -o %<"
+"         exec "!time ./%<"
+"     elseif &filetype == 'java'
+"         exec "!javac %"
+"         exec "!time java %"
+"     elseif &filetype == 'sh'
+"         exec "!time bash %"
+"     elseif &filetype == 'python'
+"         exec "!time python3 %"
+"     elseif &filetype == 'html'
+"         exec "!google-chrome % &"
+"     elseif &filetype == 'go'
+"         exec "!go build %<"
+"         exec "!time go run %"
+"     elseif &filetype == 'matlab'
+"         exec "!time octave %"
+"     endif
+" endfunc
+
+
 function! RunFile()
     exec "w"
     if &filetype == 'c'
         exec "!gcc % -o %<"
-        exec "!time ./%<"
+        exec "vsp | term ./%<"
     elseif &filetype == 'cpp'
         exec "!g++ % -o %<"
-        exec "!time ./%<"
+        exec "vsp | term ./%<"
     elseif &filetype == 'java'
         exec "!javac %"
-        exec "!time java %"
+        exec "vsp | term java %"
     elseif &filetype == 'sh'
-        exec "!time bash %"
+        exec "vsp | term bash %"
     elseif &filetype == 'python'
-        exec "!time python3 %"
+        exec "vsp | term python3 %"
     elseif &filetype == 'html'
         exec "!google-chrome % &"
     elseif &filetype == 'go'
         exec "!go build %<"
-        exec "!time go run %"
+        exec "vsp | term go run %"
     elseif &filetype == 'matlab'
-        exec "!time octave %"
+        exec "vsp | term octave %"
     endif
 endfunc
-
 
 

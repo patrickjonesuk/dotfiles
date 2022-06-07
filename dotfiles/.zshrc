@@ -105,12 +105,82 @@ export EDITOR='/usr/bin/nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-eval $(thefuck --alias)
+# # the nvm load script is very slow to execute, so only invoke it when it's actually needed
+# nvm() {
+#     if [ -s "$NVM_DIR/nvm.sh" ]
+#     then
+#         \. "$NVM_DIR/nvm.sh"
+#     else
+#         return 127
+#     fi
+#     nvm
+# }
+# alias vim='nvm &> /dev/null && /usr/bin/nvim'
+# alias node='[ -n "{$NVM_BIN+1}" ] && nvm &> /dev/null ; command node'
+#
+eval "$(fnm env --use-on-cd)"
+
+# output of `thefuck --alias` because it's slow to execute
+
+fuck () {
+    TF_PYTHONIOENCODING=$PYTHONIOENCODING;
+    export TF_SHELL=zsh;
+    export TF_ALIAS=fuck;
+    TF_SHELL_ALIASES=$(alias);
+    export TF_SHELL_ALIASES;
+    TF_HISTORY="$(fc -ln -10)";
+    export TF_HISTORY;
+    export PYTHONIOENCODING=utf-8;
+    TF_CMD=$(
+        thefuck THEFUCK_ARGUMENT_PLACEHOLDER $@
+    ) && eval $TF_CMD;
+    unset TF_HISTORY;
+    export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
+    test -n "$TF_CMD" && print -s $TF_CMD
+}
 
 if command -v fastfetch > /dev/null ; then
 fastfetch
 fi
+
+# kdesrc-build #################################################################
+
+## Add kdesrc-build to PATH
+export PATH="$HOME/kde/src/kdesrc-build:$PATH"
+
+
+## Autocomplete for kdesrc-run
+function _comp_kdesrc_run
+{
+  local cur
+  COMPREPLY=()
+  cur="${COMP_WORDS[COMP_CWORD]}"
+
+  # Complete only the first argument
+  if [[ $COMP_CWORD != 1 ]]; then
+    return 0
+  fi
+
+  # Retrieve build modules through kdesrc-run
+  # If the exit status indicates failure, set the wordlist empty to avoid
+  # unrelated messages.
+  local modules
+  if ! modules=$(kdesrc-run --list-installed);
+  then
+      modules=""
+  fi
+
+  # Return completions that match the current word
+  COMPREPLY=( $(compgen -W "${modules}" -- "$cur") )
+
+  return 0
+}
+
+## Register autocomplete function
+complete -o nospace -F _comp_kdesrc_run kdesrc-run
+
+################################################################################
+

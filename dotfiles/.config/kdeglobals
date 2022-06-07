@@ -94,7 +94,8 @@ ForegroundPositive=80,250,122
 ForegroundVisited=68,71,90
 
 [DirSelect Dialog]
-DirSelectDialog Size=844,598
+DirSelectDialog Size=839,598
+History Items[$e]=file:$HOME/Pictures/Screenshots,file:$HOME/Pictures/Screenshots
 
 [General]
 BrowserApplication=firefox-developer-edition.desktop
