@@ -13,7 +13,7 @@ Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}  " Auto Compl
 
 Plug 'https://github.com/mg979/vim-visual-multi', {'branch': 'master'} " CTRL + N for multiple cursors
 
-Plug 'https://github.com/max-0406/autoclose.nvim'
+Plug 'https://github.com/LunarWatcher/auto-pairs'
 Plug 'https://github.com/tpope/vim-fugitive' " Git plugin
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -54,7 +54,7 @@ nnoremap <silent> K :call <SID>show_documentation()<CR>
 xmap <leader>f <Plug>(coc-format-selected)
 nmap <leader>f <Plug>(coc-format-selected)
 
-nnoremap <C-f> :Files<CR>
+nnoremap <C-s> :Files<CR>
 nnoremap <C-t> :NvimTreeFindFile<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
