@@ -34,9 +34,6 @@ units:
       - .zshrc
     requires-package:
       - zsh
-  oh-my-zsh:
-    files:
-      - .oh-my-zsh/
 
   bash:
     files:
@@ -136,6 +133,15 @@ units:
       - polybar
       - dbus-python
 
+  dragon:
+    install-command: "cd ~ && git clone git@github.com:mwh/dragon.git && cd dragon && make install && cd .. && rm dragon -rf && mv ~/.local/bin/dragon ~/.local/bin/drag"
+
+  wezterm:
+    files:
+      - ~/.config/wezterm/
+    requires-package:
+      - wezterm
+
 
 groups:
   programming-languages:
@@ -147,6 +153,10 @@ groups:
       - bpytop
       - cava
       - tty-clock
+  wezterm:
+    units:
+      - wezterm
+      - dragon
   kde-plasma-apps:
     units:
       - konsole
@@ -162,10 +172,10 @@ groups:
       - polybar
     groups:
       - kde-plasma-apps
+      - wezterm
   oh-my-zsh:
     units:
       - zsh
-      - oh-my-zsh
 
   neovim:
     units:
@@ -208,6 +218,9 @@ packages:
   dbus-python:
     pacman: dbus-python
     apt: python-dbus
+  wezterm:
+    apt: wezterm
+    pacman: wezterm
 
 
 environments:

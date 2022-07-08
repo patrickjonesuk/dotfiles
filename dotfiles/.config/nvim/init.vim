@@ -22,6 +22,10 @@ Plug 'glepnir/dashboard-nvim'
 
 Plug 'dracula/vim', {'as': 'dracula'}
 
+Plug 'pjones123/kotlin-vim'
+Plug 'jparise/vim-graphql'
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+
 for f in split(glob('~/.config/local-vim-plugins/*'), '\n') " local system-specific plugins
     Plug f
 endfor
@@ -31,6 +35,7 @@ set encoding=UTF-8
 call plug#end()
 
 lua require 'nvim-tree-setup'
+lua require 'nvim-treesitter-setup'
 
 let g:dashboard_default_executive='fzf.vim'
 
