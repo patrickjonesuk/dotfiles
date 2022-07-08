@@ -138,7 +138,7 @@ units:
 
   wezterm:
     files:
-      - ~/.config/wezterm/
+      - .config/wezterm/
     requires-package:
       - wezterm
 
