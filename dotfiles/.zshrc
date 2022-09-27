@@ -184,3 +184,5 @@ complete -o nospace -F _comp_kdesrc_run kdesrc-run
 
 ################################################################################
 
+
+export PATH="$HOME/.poetry/bin:$PATH"

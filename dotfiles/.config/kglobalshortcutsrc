@@ -49,6 +49,19 @@ toggle_three_column_layout=none,none,Toggle Three Column Layout
 toggle_tile_layout=none,Meta+T,Toggle Tile Layout
 toggle_window_floating=Meta+F,Meta+F,Toggle Active Window Floating
 
+[juk]
+_k_friendly_name=JuK
+back=Ctrl+Alt+Left,Ctrl+Alt+Left,Previous
+forward=Ctrl+Alt+Right,Ctrl+Alt+Right,Next
+forwardAlbum=Ctrl+Alt+Up,Ctrl+Alt+Up,Play Next Album
+mute=Ctrl+Alt+M,Ctrl+Alt+M,Mute
+playPause=Ctrl+Alt+P,Ctrl+Alt+P,Play / Pause
+seekBack=Ctrl+Alt+Shift+Left,Ctrl+Alt+Shift+Left,Seek Back
+seekForward=Ctrl+Alt+Shift+Right,Ctrl+Alt+Shift+Right,Seek Forward
+stop=Ctrl+Alt+S,Ctrl+Alt+S,Stop
+volumeDown=Ctrl+Alt+Shift+Down,Ctrl+Alt+Shift+Down,Volume Down
+volumeUp=Ctrl+Alt+Shift+Up,Ctrl+Alt+Shift+Up,Volume Up
+
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
@@ -67,6 +80,7 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
+{f483644e-1290-4266-ba56-086a267cf969}=Ctrl+Alt+T,none,wezterm
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -269,12 +283,6 @@ _launch=none,none,Flameshot
 _k_friendly_name=Dolphin
 _launch=none,Meta+E,Dolphin
 
-[org.kde.konsole.desktop]
-NewTab=none,none,Open a New Tab
-NewWindow=none,none,Open a New Window
-_k_friendly_name=Konsole
-_launch=none,none,Konsole
-
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
@@ -293,10 +301,6 @@ RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Capture Rectangula
 WindowUnderCursorScreenShot=Meta+Ctrl+Print,Meta+Ctrl+Print,Capture Window Under Cursor
 _k_friendly_name=Spectacle
 _launch=Print,Print,Launch Spectacle
-
-[org.wezfurlong.wezterm.desktop]
-_k_friendly_name=WezTerm
-_launch=Ctrl+Alt+T,none,WezTerm
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness

@@ -58,6 +58,7 @@ nmap <leader>rn <Plug>(coc-rename)
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 xmap <leader>f <Plug>(coc-format-selected)
 nmap <leader>f <Plug>(coc-format-selected)
+xmap <leader>F <Plug>(coc-format-)
 
 nnoremap <C-s> :Files<CR>
 nnoremap <C-t> :NvimTreeFindFile<CR>

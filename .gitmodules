@@ -1,0 +1,84 @@
+[submodule "dotfiles/.config/polybar/scripts/polybar-spotify"]
+	url = https://github.com/Jvanrhijn/polybar-spotify
+	path = dotfiles/.config/polybar/scripts/polybar-spotify
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/bufferline.nvim"]
+	url = https://github.com/akinsho/bufferline.nvim.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/bufferline.nvim
+	branch = refs/heads/main
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context"]
+	url = https://github.com/nvim-treesitter/nvim-treesitter-context.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"]
+	url = https://github.com/kyazdani42/nvim-tree.lua.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/nvim-tree.lua
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/vim-airline"]
+	url = https://github.com/vim-airline/vim-airline.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/vim-airline
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/packer.nvim"]
+	url = https://github.com/wbthomason/packer.nvim
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/packer.nvim
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/auto-pairs"]
+	url = https://github.com/LunarWatcher/auto-pairs.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/auto-pairs
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/vim-fugitive"]
+	url = https://github.com/tpope/vim-fugitive.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/vim-fugitive
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/dracula"]
+	url = https://github.com/dracula/vim.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/dracula
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/fzf.vim"]
+	url = https://github.com/junegunn/fzf.vim.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/fzf.vim
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/vim-visual-multi"]
+	url = https://github.com/mg979/vim-visual-multi.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/vim-visual-multi
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/vim-devicons"]
+	url = https://github.com/ryanoasis/vim-devicons.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/vim-devicons
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"]
+	url = https://github.com/kyazdani42/nvim-web-devicons.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/nvim-web-devicons
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/vim-css-color"]
+	url = https://github.com/ap/vim-css-color.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/vim-css-color
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/vim-commentary"]
+	url = https://github.com/tpope/vim-commentary.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/vim-commentary
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/vim-signature"]
+	url = https://github.com/kshenoy/vim-signature.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/vim-signature
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/coc.nvim"]
+	url = https://github.com/neoclide/coc.nvim.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/coc.nvim
+	branch = refs/heads/release
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/vim-smoothie"]
+	url = https://github.com/psliwka/vim-smoothie.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/vim-smoothie
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/vim-surround"]
+	url = https://github.com/tpope/vim-surround.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/vim-surround
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/nvim-treesitter"]
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/nvim-treesitter
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/fzf"]
+	url = https://github.com/junegunn/fzf.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/fzf
+	branch = refs/heads/master

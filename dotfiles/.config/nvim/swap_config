@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+if [ -f ./init.lua ]
+then
+    mv init.lua init.lua.old
+    mv init.vim.old init.vim
+    echo "Changed to vimscript configuration"
+else
+    mv init.lua.old init.lua
+    mv init.vim init.vim.old
+    echo "Changed to lua configuration"
+fi

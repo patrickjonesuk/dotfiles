@@ -98,11 +98,11 @@ DirSelectDialog Size=839,598
 History Items[$e]=file:$HOME/Pictures/Screenshots,file:$HOME/Pictures/Screenshots
 
 [General]
-BrowserApplication=firefox-developer-edition.desktop
+BrowserApplication=firefoxdeveloperedition.desktop
 ColorSchemeHash=cb09e91a0bbcbf712ab4e8d369651dcc39923652
 Name[en_GB]=Breeze Light
 Name=Breeze Light
-TerminalApplication=wezterm
+TerminalApplication=wezterm start --cwd . --
 TerminalService=org.wezfurlong.wezterm.desktop
 XftHintStyle=hintslight
 XftSubPixel=rgb
@@ -134,6 +134,7 @@ Show Speedbar=true
 Show hidden files=true
 Sort by=Name
 Sort directories first=true
+Sort hidden files last=false
 Sort reversed=true
 Speedbar Width=138
 View Style=DetailTree
