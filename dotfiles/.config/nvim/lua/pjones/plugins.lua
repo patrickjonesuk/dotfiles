@@ -33,18 +33,30 @@ return require('packer').startup(function(use)
     })  -- Auto Completion
 
     use('mg979/vim-visual-multi') -- CTRL + N for multiple cursors
-    use('LunarWatcher/auto-pairs')
+    --use('LunarWatcher/auto-pairs')
+    --
+    --use('m4xshen/autoclose.nvim')-- doesn't conflict with <C-p>
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
+
     use('tpope/vim-surround')
     use('tpope/vim-fugitive') -- Git plugin
 
+    -- telescope
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires =  { { 'nvim-lua/plenary.nvim' } }
+    }
     -- fzf
-    use({
-        'junegunn/fzf',
-        run = (function()
-            vim.fn['fzf#install']()
-        end)
-    })
-    use('junegunn/fzf.vim')
+    -- use({
+    --     'junegunn/fzf',
+    --     run = (function()
+    --         vim.fn['fzf#install']()
+    --     end)
+    -- })
+    -- use('junegunn/fzf.vim')
 
     -- Colour scheme
     use({

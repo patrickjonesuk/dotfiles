@@ -121,7 +121,6 @@ export EDITOR='/usr/bin/nvim'
 # alias vim='nvm &> /dev/null && /usr/bin/nvim'
 # alias node='[ -n "{$NVM_BIN+1}" ] && nvm &> /dev/null ; command node'
 #
-eval "$(fnm env --use-on-cd)"
 
 # output of `thefuck --alias` because it's slow to execute
 
@@ -186,3 +185,16 @@ complete -o nospace -F _comp_kdesrc_run kdesrc-run
 
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+# fnm
+export PATH="/home/pjones/.local/share/fnm:$PATH"
+eval "`fnm env`"
+
+# fnm
+export PATH="/home/pjones/.local/share/fnm:$PATH"
+eval "`fnm env`"
+
+# react native
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools

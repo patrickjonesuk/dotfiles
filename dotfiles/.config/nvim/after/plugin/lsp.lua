@@ -9,6 +9,7 @@ map.nmap("gr", "<Plug>(coc-references)", { silent = true })
 
 
 map.nmap("<leader>rn", "<Plug>(coc-rename)", { silent = true })
+map.nmap("<leader>ca", "<Plug>(coc-codeaction-cursor)", { silent = true })
 
 map.xnoremap("<leader>f", "<Plug>(coc-format-selected)")
 map.nnoremap("<leader>f", "<Plug>(coc-format-selected)")

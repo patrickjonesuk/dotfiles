@@ -82,3 +82,15 @@
 	url = https://github.com/junegunn/fzf.git
 	path = dotfiles/.local/share/nvim/site/pack/packer/start/fzf
 	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/nvim-autopairs"]
+	url = https://github.com/windwp/nvim-autopairs.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/nvim-autopairs
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/plenary.nvim"]
+	url = https://github.com/nvim-lua/plenary.nvim.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/plenary.nvim
+	branch = refs/heads/master
+[submodule "dotfiles/.local/share/nvim/site/pack/packer/start/telescope.nvim"]
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+	path = dotfiles/.local/share/nvim/site/pack/packer/start/telescope.nvim
+	branch = refs/heads/master

@@ -239,3 +239,4 @@ environments:
       - neovim-plugins
       - programming-languages
       - system-utils
+      - wezterm

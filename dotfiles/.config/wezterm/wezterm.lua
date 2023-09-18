@@ -1,4 +1,5 @@
 local wezterm = require 'wezterm';
+local config = require 'size'
 
 wezterm.on("highlight-word", function(window, pane)
     window:perform_action(wezterm.action.SelectTextAtMouseCursor("Word"), pane)
@@ -20,8 +21,10 @@ return {
         brightness = 1,
     },
 
-    font = wezterm.font("Iosevka Fixed Medium Extended"),
-    font_size = 10.0,
+    --font = wezterm.font("Iosevka Fixed Medium Extended"),
+    font = wezterm.font("JetbrainsMono Nerd Font", { weight = "Medium"}),
+    font_size = config.font_size,
+    -- font_size = 10.0,
     hide_tab_bar_if_only_one_tab = true,
     tab_bar_at_bottom = true,
     use_fancy_tab_bar = false,
